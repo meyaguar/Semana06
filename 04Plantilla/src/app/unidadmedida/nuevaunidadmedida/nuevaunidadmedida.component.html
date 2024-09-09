@@ -1,0 +1,46 @@
+<div class="card my-5">
+  <div class="card-body">
+    <h3>{{ titulo }}</h3>
+    <form [formGroup]="frm_UnidadMedida" (ngSubmit)="grabar()">
+      <div class="form-group mb-3">
+        <label for="Detalle">Detalle</label>
+        <input formControlName="Detalle" type="text" class="form-control" id="Detalle" placeholder="Ingrese el detalle" />
+        <div *ngIf="frm_UnidadMedida.get('Detalle')?.invalid && frm_UnidadMedida.get('Detalle')?.touched" class="text-danger">
+          El detalle es requerido.
+        </div>
+      </div>
+      
+      <div class="form-group mb-3">
+        <label for="Tipo">Tipo</label>
+        <select formControlName="Tipo" class="form-control" (change)="cambio($event)">
+          <option value="">Seleccione el tipo</option>
+          <option value="0">Presentación</option>
+          <option value="1">Unidad de Medida</option>
+          <option value="2">Factor de Conversión</option>
+        </select>
+        <div *ngIf="frm_UnidadMedida.get('Tipo')?.invalid && frm_UnidadMedida.get('Tipo')?.touched" class="text-danger">
+          El tipo es requerido.
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary" [disabled]="frm_UnidadMedida.invalid">Guardar</button>
+    </form>
+  </div>
+</div>
+
+<!--
+    IMPORTAR => FORMSMODULE  APP.MODULE.TS ||  NUEVOPROVEEDOR.COMPONENT.TS
+    
+    
+    
+    
+    
+    INTRPOLACION => DESDE EL TS AL HTML
+    {{ }} 
+    EVENTOS => EJECUTAR FUNCIONES EN EL TS
+    ()
+    DATA BINDING => DESDE EL HTML AL TS
+    []
+    TWO WAY BIDING => ENVIADO DE DATOS DESDE EL HTML AL TS Y DESDE EL TS AL HTML
+    [()]
+    -->
