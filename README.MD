@@ -1,6 +1,6 @@
-# Tarea: Implementación de CRUD para Unidad de Medida y Productos
+# Tarea: Implementación de CRUD para Unidad de Medida
 
-Este proyecto tiene como objetivo implementar las operaciones de **Update** y **Delete** para la entidad **Unidad de Medida**, así como **Insert** y **Update** para la entidad **Productos**. Se ha utilizado **PHP** como backend y **Angular** como frontend, en un entorno de arquitectura **MVC**.
+Este proyecto tiene como objetivo implementar las operaciones de **Update** y **Delete** para la entidad **Unidad de Medida**. Se ha utilizado **PHP** como backend y **Angular** como frontend, en un entorno de arquitectura **MVC**.
 
 ## Estructura del Proyecto
 
@@ -36,7 +36,7 @@ El proyecto está dividido en dos secciones principales:
 
 1. Clona el repositorio o descarga los archivos.
 2. Configura los parámetros de conexión a la base de datos en `config.php`.
-3. Importa las tablas necesarias para **Unidad de Medida** y **Productos** en tu base de datos.
+3. Asegurate que han sido importadas las tablas necesarias para **Unidad de Medida** en tu base de datos.
 4. Coloca el proyecto en el servidor local y asegúrate de que Apache/Nginx esté funcionando.
 
 ### Frontend (Angular)
