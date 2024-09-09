@@ -1,6 +1,6 @@
 # Tarea: Implementación de CRUD para Unidad de Medida
 
-Este proyecto tiene como objetivo implementar las operaciones de **Update** y **Delete** para la entidad **Unidad de Medida**. Se ha utilizado **PHP** como backend y **Angular** como frontend, en un entorno de arquitectura **MVC**.
+Este ejercicio tiene como objetivo implementar las operaciones de **Update** y **Delete** para la entidad **Unidad de Medida**. Se ha utilizado **PHP** como backend y **Angular** como frontend, en un entorno de arquitectura **MVC**.
 
 ## Estructura del Proyecto
 
